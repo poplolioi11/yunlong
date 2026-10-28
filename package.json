@@ -1,0 +1,21 @@
+{
+  "name": "yunlong",
+  "version": "0.4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4322 --bind 127.0.0.1 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/dragon.js && node --check dist/dragon-head.js && node --check dist/clouds.js && node --check dist/flight.js && node --check dist/motifs.js",
+    "test": "node scripts/verify-flight.mjs"
+  },
+  "license": "MIT",
+  "description": "雲龍 Yunlong：受 ascii-sharks 啟發，結合東方五行與三軸飛行的 ASCII 中國龍動畫。",
+  "author": "Chen-Yu Chu (曲宸宇)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poplolioi11/yunlong.git"
+  },
+  "homepage": "https://poplolioi11.github.io/yunlong/",
+  "engines": {
+    "node": ">=18"
+  }
+}
